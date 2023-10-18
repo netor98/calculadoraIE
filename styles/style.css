@@ -27,7 +27,7 @@ a {
 
 .button {
     display: inline-block;
-    padding: 15px 45px;
+    padding: 10px 45px;
     font-size: 20px;
     background-color: white;
     border: 3px solid black;
@@ -36,7 +36,8 @@ a {
     border-radius: 10px;
     transition: background-color 0.3s, color 0.3s;
     box-shadow: 4px 4px black;
-    width: 150px;
+    width: auto;
+    height: auto;
     margin: auto 10px;
 }
 
@@ -56,18 +57,17 @@ a {
     color: #F5E8B7;
 }
 
+.header a {
+    color: inherit;
+}
+
 .main {
     min-height: 85vh;
     width: 100%;
     background-color: #F5E8B7;
     padding: 2rem;
-    padding-top: 6rem;
     margin-left: auto;
     margin-right: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: 0;
 }
 
 .main > h1 {
@@ -102,8 +102,10 @@ a {
 
 .footer {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     background-color: #232D3F;
+    color: #fff;
     padding: 2rem;
 }
 
@@ -123,4 +125,119 @@ a {
 
 #image:hover {
     cursor: auto;
+}
+
+.center {
+    text-align: center;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#form label {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#form input {
+    padding: 12px 0;
+    font-family: 'Popins', sans-serif;
+    font-size: 18px;
+    height: 23px;
+    margin: auto 20px;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+#add {
+    padding: 5px;
+    margin: 10px auto;
+}
+
+#calc {
+    display: none;
+    margin: 15px auto;
+    padding: auto 20px;
+    background-color: rgb(140, 247, 52);
+}
+
+#calc:hover {
+    background-color: #CD5C08;
+}
+
+.valid {
+    background-color: #cf0404;
+}
+
+#add:hover {
+    background-color: rgb(177, 202, 87);
+}
+
+#delete {
+    padding: 2px 2px;
+    margin: 5px auto;
+    box-shadow: none;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+#delete:hover {
+    background-color: rgb(252, 66, 66);
+}
+
+.button-back {
+    width: auto;
+    position: sticky;
+    bottom: 5vh;
+}
+.button-back:hover {
+    background-color: cornflowerblue;
+}
+
+#tasa {
+    width: 10%;
+}
+
+.show {
+    display: inline-block;
+}
+
+.hide {
+    display: none;
+}
+
+.popup {
+    width: 500px;
+    background-color: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    color: #333;
+    visibility: hidden;
+    transition: transform 0.4s, top .4s;
+    border: 2px solid black;
+    box-shadow: 0 0 100px rgba(0, 0, 0, .6);
+}
+
+.popup button { 
+    width: 50%;
+    margin: 50px auto;
+    background-color: #aadb24;
+    border: 0;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.open-pop {
+    visibility: visible;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1);
 }

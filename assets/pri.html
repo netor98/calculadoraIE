@@ -1,5 +1,30 @@
-<h2 class="title">Periodo de recuperación de la inversión</h2>
-<form action="">
-    <label for="cantidad">Cantidad</label>
-    <input type="number" placeholder="" id="cantidad">
-</form>
+<h2 class="center">Periodo de recuperación de la inversión</h2>
+<div class="container">
+    <form action="" id="form">
+        <div>
+            <label for="inversion">Inversión Inicial</label>
+            <input type="text" placeholder="" id="inversion" class="input">
+            <label for="tasa" class="tasa">Tasa de retorno</label>
+            <input type="text" placeholder="%" id="tasa" class="tasa">
+        </div>
+
+        
+        <button id="add" type="button" class="button">
+            &#x002B Agregar FE
+        </button>
+
+        <button id="calc" type="button" class="button">
+            :) Calcular
+        </button>
+
+                
+    </form>
+    <div id="popup" class="popup">
+        <button type="button" class="button" id="close-pop">Ok</button>
+    </div>
+</div>
+
+<div>
+    <a href="./assets/main.html" class="button button-back link">&#x2B05 Volver</a>
+</div>
+<script src="../js/inputs.js"></script>
